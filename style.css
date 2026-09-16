@@ -1,27 +1,157 @@
+/* ================================
+   EMBEDDED CHILLER FONT
+   ================================ */
+@font-face {
+    font-family: 'ChillerEmbedded';
+    src: url('fonts/CHILLER.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ================================
+   GLOBAL PAGE STYLES
+   ================================ */
 body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #eee;
+    background: #000;
+    color: #fff;
+    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px;
+body.red-bg {
+    background: #990000;
+    overflow: auto; /* allows scrolling on homepage */
+    text-align: left; /* optional, homepage layout usually isn't centred */
 }
 
-h1 {
-    margin-bottom: 5px;
+.header-bar-image img {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-main {
+/* ================================
+   ALPHABET BAR
+   ================================ */
+
+.alphabet-bar {
+    width: 1000px; /* same width as your header GIF */
+    background: #E72421;
+    margin: 0 auto;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.alphabet-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.alphabet-inner a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alphabet-inner a:hover {
+    text-decoration: underline;
+}
+
+.alphabet-inner span {
+    color: white;
+    opacity: 0.7;
+}
+
+.search-box {
+    margin-left: 20px;
+    padding: 3px 6px;
+    font-size: 14px;
+}
+
+.search-btn {
+    padding: 4px 10px;
+    margin-left: 5px;
+    background: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #333;
+}
+
+
+/* ================================
+   TOP BANNER GIF
+   ================================ */
+.banner-gif {
+    padding-top: 20px;
+}
+
+.banner-gif img {
+    width: 400px;
+    height: auto;
+}
+
+/* ================================
+   INTRO TEXT BLOCK
+   ================================ */
+.intro-text {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 1.5;
 }
 
-ul {
-    list-style: square;
-    padding-left: 20px;
+/* ================================
+   THREE-COLUMN LAYOUT
+   ================================ */
+.three-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* ================================
+   LEFT + RIGHT CHILLER TEXT
+   ================================ */
+.side-text {
+    width: 150px;
+    color: red;
+    font-family: 'ChillerEmbedded', 'Chiller', Arial, sans-serif;
+    font-size: 23px;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* ================================
+   MIDDLE ENTER GIF
+   ================================ */
+.middle-gif img {
+    width: 330px; /* adjust this to make the GIF bigger or smaller */
+    height: auto;
+}
+
+.footer-text {
+    color: white;
+    font-size: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.4;
+    text-align: center;
+    padding-bottom: 40px;
 }
