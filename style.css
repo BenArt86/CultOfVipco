@@ -23,8 +23,8 @@ body {
 
 body.red-bg {
     background: #990000;
-    overflow: auto; /* allows scrolling on homepage */
-    text-align: left; /* optional, homepage layout usually isn't centred */
+    overflow: auto;
+    text-align: left;
 }
 
 .header-bar-image img {
@@ -39,7 +39,7 @@ body.red-bg {
    ================================ */
 
 .alphabet-bar {
-    width: 1000px; /* same width as your header GIF */
+    width: 1000px;
     background: #E72421;
     margin: 0 auto;
     padding: 8px 0;
@@ -91,7 +91,6 @@ body.red-bg {
     background: #333;
 }
 
-
 /* ================================
    TOP BANNER GIF
    ================================ */
@@ -116,7 +115,7 @@ body.red-bg {
 }
 
 /* ================================
-   THREE-COLUMN LAYOUT
+   THREE-COLUMN LAYOUT (OLD)
    ================================ */
 .three-columns {
     display: flex;
@@ -142,7 +141,7 @@ body.red-bg {
    MIDDLE ENTER GIF
    ================================ */
 .middle-gif img {
-    width: 330px; /* adjust this to make the GIF bigger or smaller */
+    width: 330px;
     height: auto;
 }
 
@@ -155,3 +154,143 @@ body.red-bg {
     text-align: center;
     padding-bottom: 40px;
 }
+
+/* ============================================================
+   NEW CODE — THREE COLUMN LAYOUT FOR HOMEPAGE
+   ============================================================ */
+
+.main-columns {
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* ================================
+   LEFT COLUMN (200px)
+   ================================ */
+.left-column {
+    width: 200px;
+}
+
+.left-ad {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ================================
+   PURE IMAGE CATEGORY BUTTONS (FINAL WORKING VERSION)
+   ================================ */
+
+.category-img {
+    width: 200px;
+    height: 40px; /* adjust if your skull images are taller */
+    display: block;
+    margin-bottom: 1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* DEFAULT RED IMAGES */
+.home-btn     { background-image: url("images/homered.jpg"); }
+.about-btn    { background-image: url("images/aboutred.jpg"); }
+.precert-btn  { background-image: url("images/precertred.jpg"); }
+.cult-btn     { background-image: url("images/cultred.jpg"); }
+.vault-btn    { background-image: url("images/vaultred.jpg"); }
+.danish-btn   { background-image: url("images/danishred.jpg"); }
+.sample-btn   { background-image: url("images/samplered.jpg"); }
+.ex-btn       { background-image: url("images/exred.jpg"); }
+.special-btn  { background-image: url("images/specialred.jpg"); }
+.support-btn  { background-image: url("images/supportred.jpg"); }
+.contact-btn  { background-image: url("images/contactred.jpg"); }
+.help-btn     { background-image: url("images/helpred.jpg"); }
+
+/* HOVER YELLOW IMAGES */
+.home-btn:hover     { background-image: url("images/homeyellow.jpg"); }
+.about-btn:hover    { background-image: url("images/aboutyellow.jpg"); }
+.precert-btn:hover  { background-image: url("images/precertyellow.jpg"); }
+.cult-btn:hover     { background-image: url("images/cultyellow.jpg"); }
+.vault-btn:hover    { background-image: url("images/vaultyellow.jpg"); }
+.danish-btn:hover   { background-image: url("images/danishyellow.jpg"); }
+.sample-btn:hover   { background-image: url("images/sampleyellow.jpg"); }
+.ex-btn:hover       { background-image: url("images/exyellow.jpg"); }
+.special-btn:hover  { background-image: url("images/specialyellow.jpg"); }
+.support-btn:hover  { background-image: url("images/supportyellow.jpg"); }
+.contact-btn:hover  { background-image: url("images/contactyellow.jpg"); }
+.help-btn:hover     { background-image: url("images/helpyellow.jpg"); }
+
+/* ================================
+   MIDDLE COLUMN (560px)
+   ================================ */
+.middle-column {
+    width: 560px;
+    background: #660000;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* ================================
+   HOME PAGE WHITE CONTENT BOX
+   ================================ */
+.home-box {
+    width: 560px;
+    background: white;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 2px solid #660000;
+}
+
+/* ================================
+   RIGHT COLUMN (200px)
+   ================================ */
+.right-column {
+    width: 200px;
+}
+
+.ad-box {
+    width: 200px;
+    height: auto;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.right-big-block {
+    width: 200px;
+    height: 910px;
+    background: #E72421;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;               /* NEW */
+    flex-direction: column;      /* NEW */
+    justify-content: space-between; /* NEW */
+}
+
+
+/* Centre the help buttons inside the right column */
+.right-big-block .category-img {
+    margin: 0 auto -5px auto;
+    display: block;
+    transform: translateX(-10px);
+}
+
+.vipco-test {
+    font-family: Algerian, serif;
+    font-size: 40px;
+    color: black;
+}
+
+.home-box p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+
